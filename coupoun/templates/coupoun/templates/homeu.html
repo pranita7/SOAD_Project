@@ -1,0 +1,6 @@
+<h1>Hi</h1>
+<form method="POST" action="{% url 'codes' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="OK">
+</form>
